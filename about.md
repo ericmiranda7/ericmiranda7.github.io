@@ -3,6 +3,6 @@ layout: post
 title: About
 ---
 
-This is an example page!
+My name is Eric
 
-Actually, it has the same layout of a post...
+Contact me: [ericmiranda7@gmail.com](mailto:ericmiranda7@gmail.com)

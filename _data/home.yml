@@ -2,11 +2,9 @@ navbar_entries:
   - title: about
     url: about
 
-  - title: blog
-    url: blog
+  - title: github
+    url: https://github.com/ericmiranda7
 
-  - title: website
-    url: https://www.abhinav.co
 
 project_entries:
   - title: Project 1
@@ -54,9 +52,6 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: github
-    url: https://github.com/abhinavs
-
   - title: feed
     url: feed.xml
 
