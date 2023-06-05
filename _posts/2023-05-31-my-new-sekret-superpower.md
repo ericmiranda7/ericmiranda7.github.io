@@ -71,7 +71,7 @@ With Test Driven Development, you
 5. Repeat until satisfied
 
 I'm choosing to go with Go so let's write up a little test for `parseFacts`  
-![test parse](../assets/images/unit-tests/test_parse.svg)
+![test parse](../assets/images/unit-tests/first_parse_test.svg)
 Here we have a test function that takes in a variable t provided by the `go test` tool. It's essentially a type that provides utility functions
 such as printing error messages, running seperate tests, etc. Next we have a slice of `Fact`s - don't worry that we haven't declared it yet,
 all we're focused on is writing a test to specify what we want. We then call our parsing function with that slice - once again, don't worry about
@@ -97,12 +97,12 @@ that[^3]. Test first!
 ![test slice contains](../assets/images/unit-tests/test_slice_contains.svg)
 
 Run it, fail it, and write the minimum amount of code to pass it.
+![slice contains](../assets/images/unit-tests/slice_contains.svg)
+_Run the test and watch it pass._  
 
-![slice contains](../assets/images/unit-tests/test_slice_contains.svg)
+I'm pretty happy with the function I've written, so I'll skip the refactoring step.
 
-Run the test and watch it pass. I'm pretty happy with the function I've written, so I'll skip the refactoring step.
-
-Let's use our new function to simplify our code
+Let's use our new function to simplify our `parseFact` code.
 ![new parse](../assets/images/unit-tests/new_parse.svg)
 The function loops through the fact slice and checks whether the first and second unit exist within the slice and
 if not, adds it to the unit slice.
@@ -114,8 +114,7 @@ be related to each other).
 My old self shouts at me. "You should already get back a graph populated with conversion values as the edges. What are you, stupid?".  
 But my new unit testing persona steps in and says "Hey, don't overwhelm yourself. Also, single responsibility principle! That'll
 lead to better testable code too. Make another function when you're done
-with this which populates the graph :)"  
-I like the new persona. It's kind. It's doable.
+with this which populates the graph :)". I like the new persona. It's kind. It's doable.
 ![create graph](../assets/images/unit-tests/create_graph.svg)
 
 Woohoo! Another step closer. Next up, population. Our graph will be a directed one - it matters which unit you're converting from and to. One direction
