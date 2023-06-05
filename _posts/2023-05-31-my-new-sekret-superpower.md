@@ -46,8 +46,6 @@ Each one of these have their pros and cons with regards to the type of graph, sp
 easy to use [adjacency matrix](https://en.wikipedia.org/wiki/Adjacency_matrix)! When there exists an edge between two units, the value of that
 edge would be the conversion multiplier, depending on the starting unit. The opposite edge would have the reciprocal multiplier!
 
-_todo(): image of matrix_
-
 Great, we've settled on the 'DS' of DSA. Coming to the algorithm, as I explained earlier, it looks like we chain multiply the
 conversion value until we reach the destination unit. There are 2 main methods of traversing a graph, breadth first search (BFS) and
 depth first search (DFS). Once again, both have their pros and cons that we won't go into - let's settle on DFS since it's easier to traverse
