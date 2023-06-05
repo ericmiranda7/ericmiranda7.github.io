@@ -80,7 +80,7 @@ vertex (with no duplicates!). Finally, we call `reflect.DeepEqual` to check whet
 an error message notifying the deviation.
 
 Fail the test
-![fail parse test](../assets/images/unit-tests/fail_parse.png)
+![fail parse test](../assets/images/unit-tests/cmd_fail.png)
 
 Now, let's write the _least_ amount of code to make the test pass.
 ![parse facts](../assets/images/unit-tests/parse_facts.svg)
