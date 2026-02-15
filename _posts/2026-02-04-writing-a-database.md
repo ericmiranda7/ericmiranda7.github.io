@@ -50,7 +50,7 @@ and value is the byte offset of that key in the `logfile`.
 
 Solving a single con resulted in another 5! Tradeoffs!
 
-#### Byte Offset + Merging & Compaction
+### 3. Byte Offset + Merging & Compaction
 Let's solve con 2 & 5.
 Rather than maintaining one massive `logfile` we'll write the log to disk after every x mb. This is called a segment.
 On this segment, we could run
@@ -67,7 +67,7 @@ into 1, allowing for compaction across segments, referred to as merging.
 6. [ ] Unable to make range queries efficiently (give me all keys / values between 'apple' and 'bat')
 
 
-### SSTables
+### 4. SSTables
 Let's solve con 5 & 6, using an SSTable!
 Simply put, an SSTable is a logfile with key-value records sorted by the key. This provides a few benefits
 since the keys are sorted:
